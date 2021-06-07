@@ -1,0 +1,266 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&family=Shadows+Into+Light&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+    
+        <link rel="stylesheet" type="text/css" href="styler.css">
+        <script src="app.js"></script>
+       
+    </head>
+
+    <body class="h-100">
+
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a class="navbar-brand" style="color: whitesmoke; text-decoration-style: wavy;" href="#">
+                            Home
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+               
+
+                <div class="dropdown navbar-right">
+                    <button
+                    id="option-id"
+                    class="btn btn-light dropdown-toggle bg-dark text-white"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >
+                        Services
+                    </button>
+                
+                <div
+                class="dropdown-menu"
+                aria-labelledby="option-id">
+                <a class="dropdown-item" id="btn-logout" href="Login.html">
+                    Air Conditioning
+                </a>
+                <a class="dropdown-item" id="btn-logout" href="Login.html">
+                    Electrical
+                </a>
+                <a class="dropdown-item" id="btn-logout" href="Login.html">
+                    Plumbing
+                </a>
+                <a class="dropdown-item" id="btn-logout" href="Login.html">
+                    Windows Cleaning
+                </a>
+                <a class="dropdown-item" id="btn-logout" href="Login.html">
+                    Home Appliance
+                </a>
+                <a class="dropdown-item" id="btn-logout" href="Login.html">
+                    Flooring
+                </a>
+            </div>
+            </div>
+
+            </div>
+
+            <div class="dropdown navbar-right">
+                <button
+                id="option-id"
+                class="btn btn-light dropdown-toggle bg-dark text-white"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >
+                    Contact Us
+                </button>
+            
+            <div
+            class="dropdown-menu"
+            aria-labelledby="option-id">
+            <a class="dropdown-item" id="btn-logout" href="">
+                email-xyz@gmail.com<br>
+                Phone-12122121212121212
+            </a>
+        </div>
+        </div>
+
+                <div class="dropdown navbar-right">
+                    <button
+                    id="option-id"
+                    class="btn btn-light dropdown-toggle bg-dark text-white"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >
+                        Options
+                    </button>
+                
+                <div
+                class="dropdown-menu"
+                aria-labelledby="option-id">
+                <a class="dropdown-item" id="btn-logout" href="https://www.google.com/">
+                    Exit
+                </a>
+            </div>
+            </div>
+
+            </div>
+        </nav>
+        <p></p>
+        <p></p>
+
+        <p><h3 style="text-align: center;">Welcome to Home Needs !!</h3></p>
+
+        <div class="slider">
+
+        </div>
+
+        <div class="box">
+            <div class="imgBx">
+                <img src="aboutus.jpg">
+            </div>
+            <div class="content">
+                <p></p>
+                <h2>About Us</h2>
+                <p>
+                    We are a firm which is motivated and determined to help our customer to achieve the home of there dream where they can cherish and crete memeories without any trouble. We are there for them to solve any problem that they face weather electrical or cleaning just call us we will be there in jiff.
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+            
+                
+            </div>
+            
+        </div>
+
+        <p><h6 style="text-align: center;"> Services provided by us</h6></p>
+        
+        <div class="wrapper">
+            <div class="card">
+                <img src="h1.jpg">
+                <div class="info">
+                    <h1>Electrical</h1>
+                    <p>In this service we provide solution to all of your electrical problem whether it is wiring or new lights we will do it for you. </p>
+                    <a href="#" class="btn">Click for more info</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="h2.jpg">
+                <div class="info">
+                    <h1>Plumbing</h1>
+                    <p>In this service we provide solution to your plumbing needs from new water motor to new tank we will do it for you.</p>
+                    <a href="#" class="btn">Click for more info</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="h3.jpg">
+                <div class="info">
+                    <h1>Cleaning</h1>
+                    <p>In this service we provide you the clean house in the most optimize and effective way.</p>
+                    <a href="#" class="btn">Click for more info</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="h4.jpg">
+                <div class="info">
+                    <h1>Flooring</h1>
+                    <p>This service we focus on the floor renovation so that you won't face any issue ahead.</p>
+                    <a href="#" class="btn">Click for more info</a>
+                </div>
+            </div>
+            <P><br>  
+                  </P>
+            
+
+        </div>
+        <a href="#">
+            <button style="margin-top: 50%; margin-left: 45%;">Click here to check out more services</button>
+        </a>
+
+        <header>
+            <div class="content">
+                <h1>Sale<span>Sale</span>Sale</h1>
+                <h2>CHECK OUT THE AWESOME DEALS NOW !!</h2>
+                
+                <a href="#">
+                    <button>Click here to check out our slashed prices</button>
+                </a>
+            </div>
+          </header>
+        
+
+        <footer>
+    
+            <div class="services">
+    
+                <h2 class="headings">LOCATION</h2>
+                <hr style="margin-right: 100px;">
+                <br> <br>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>&ensp; 
+                    <a class="foot" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a>
+                </p>
+    
+                <br><br>
+    
+            </div>
+    
+            <div class="links">
+                <h2 class="headings">CONTACT INFORMATION</h2>
+                <hr style="margin-right: 100px;">
+                <br><br>
+    
+                <i class="fas fa-phone"></i> &ensp; <a class="foot" href="tel:#">1-800-1234-567</a><br>
+                <br>
+                
+                <i class="far fa-envelope"></i> &nbsp;
+                <a class="foot" href="mailto:info@demolink.org">info@demolink.org</a>
+        
+            </div>
+    
+            <div class = "logodiv">
+                <img src="logo-light-171x39.png" alt="">
+            </div>
+            
+            <p class="rights">
+                <span>&copy;&nbsp;</span>
+                <span class="copyright-year"></span>
+                <span>&nbsp;</span>
+                <span>2021 All Rights Reserved</span>
+                <span>.&nbsp;</span>
+                <a href="privacy-policy.html">Terms of Use and Privacy Policy</a>
+            </p>
+        </footer>
+    
+        
+
+        
+        </body>
+
+
+</html>

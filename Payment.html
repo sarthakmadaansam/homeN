@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+
+    <link rel="stylesheet" href="./Payment.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark text-white">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a class="navbar-brand" style="color: whitesmoke; text-decoration-style: wavy;" href="#">
+                        Home
+                    </a>
+                </li>
+                
+                
+            </ul>
+
+            <div class="dropdown navbar-right">
+                <button
+                id="option-id"
+                class="btn btn-light dropdown-toggle bg-dark text-white"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >
+                    Services
+                </button>
+            
+            <div
+            class="dropdown-menu"
+            aria-labelledby="option-id">
+            <a class="dropdown-item" id="btn-logout" href="Login.html">
+                Cash Management
+            </a>
+            <a class="dropdown-item" id="btn-logout" href="Login.html">
+                M & A Assistance
+            </a>
+            <a class="dropdown-item" id="btn-logout" href="Login.html">
+                Branding
+            </a>
+            <a class="dropdown-item" id="btn-logout" href="Login.html">
+                Local Enterprise 
+            </a>
+        </div>
+        </div>
+
+        </div>
+
+        <div class="dropdown navbar-right">
+            <button
+            id="option-id"
+            class="btn btn-light dropdown-toggle bg-dark text-white"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >
+                Contact Us
+            </button>
+        
+        <div
+        class="dropdown-menu"
+        aria-labelledby="option-id">
+        <a class="dropdown-item" id="btn-logout" href="">
+            email-xyz@gmail.com<br>
+            Phone-12122121212121212
+        </a>
+    </div>
+    </div>
+
+            <div class="dropdown navbar-right">
+                <button
+                id="option-id"
+                class="btn btn-light dropdown-toggle bg-dark text-white"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >
+                    Options
+                </button>
+            
+            <div
+            class="dropdown-menu"
+            aria-labelledby="option-id">
+            <a class="dropdown-item" id="btn-logout" href="https://www.google.com/">
+                Exit
+            </a>
+        </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <div class="container-1 ">
+
+        <form class="signup" action="" method="post" id="userInput">
+
+            <h1> PAYMENT INFO</h1>
+
+            <input class="field" type="text" name="name" id="name" placeholder="   First Name" >
+            
+            <input class="field" type="text" name="name" id="name" placeholder="   Last Name" >
+            
+            <input class="field" type="email" name="email" id="email" placeholder="  Email-Id" >
+
+            <input class="field" type="number" name="phonenumber" id="amount" placeholder="  Phone Number">
+
+            <input class="field" type="number" name="amount" id="amount" placeholder="  Amount"> <br>
+
+            <select onclick="cNumber()" class="field" name="paytype" id="paytype" form="userInput" required>
+                <option value="Credit">Credit Card</option>
+                <option value="Debit">Debit Card</option>
+            </select> 
+
+            <input id="cardnumber" class="field active" type="cardnumber" name="cardnumber" id="cardnumber" placeholder="  Card Number">
+
+            <br><br><br>
+            <input onclick="payment()" class="submit" type="button" name="pay" value=" PAY">
+
+            <br><br><br>
+
+            <p id="demo"></p>
+
+            <br>
+            
+
+        </form>
+    </div>
+    
+    <footer>
+    
+        <div class="services">
+
+            <h2 class="headings">LOCATION</h2>
+            <hr style="margin-right: 100px;">
+            <br> <br>
+            <p>
+                <i class="fas fa-map-marker-alt"></i>&ensp; 
+                <a class="foot" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a>
+            </p>
+
+            <br><br>
+
+        </div>
+
+        <div class="links">
+            <h2 class="headings">CONTACT INFORMATION</h2>
+            <hr style="margin-right: 100px;">
+            <br><br>
+
+            <i class="fas fa-phone"></i> &ensp; <a class="foot" href="tel:#">1-800-1234-567</a><br>
+            <br>
+            
+            <i class="far fa-envelope"></i> &nbsp;
+            <a class="foot" href="mailto:info@demolink.org">info@demolink.org</a>
+    
+        </div>
+
+        <div class = "logodiv">
+            <img src="./images/logo-light-171x39.png" alt="">
+        </div>
+        
+        <p class="rights">
+            <span>&copy;&nbsp;</span>
+            <span class="copyright-year"></span>
+            <span>&nbsp;</span>
+            <span>2021 All Rights Reserved</span>
+            <span>.&nbsp;</span>
+            <a href="privacy-policy.html">Terms of Use and Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script>
+        function cNumber(){
+            var p = document.getElementById("cardnumber");
+            p.classList.remove("active");
+        }
+
+        function payment(){
+
+            var txt;
+            if (confirm("Are you sure you want to continue Payment ? ")) {
+                txt = "Your Payment is done.";
+            } else {
+                txt = "You Payment is Cancelled!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+            
+        }
+    </script>
+    
+</body>
+
+</html>

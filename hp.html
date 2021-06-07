@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Open Sans", sans-serif;
+        min-height: 100vh;
+        font-size: 16px;
+        background: #8edae8;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .card-box {
+        width: 320px;
+        height: 300px;
+        background: #fff;
+        border-radius: 7px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    a {
+        text-decoration: none;
+        color: #848b8c;
+    }
+
+    .card-box .card-img {
+        width: calc(100% - 0.8rem);
+        margin: auto;
+        margin-top: 5px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.2s;
+        box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.6);
+
+
+    }
+
+    .card-box .card-img:hover {
+        transform: scale(1.04) rotate(-4deg);
+        box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.4), 5px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-content {
+        padding: 1rem 2rem 1rem 1rem;
+    }
+
+    .card-box h5 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .card-box span:hover {
+        opacity: 0.8;
+    }
+
+    .card-box h5 a:hover {
+        text-decoration: none;
+    }
+
+    .card-box:hover {
+        opacity: 0.9;
+        font-weight: semi-bold;
+    }
+</style>
+
+<body>
+    <div class="container" style="margin: 30px 0;">
+        <div class="card-box" style="display: flex;flex-direction: column;">
+            <div class="card-img">
+                <img src="https://thumbs.dreamstime.com/b/plumber-work-bathroom-plumbing-repair-service-assemble-install-concept-plumber-work-bathroom-plumbing-repair-113995223.jpg"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h5><a href="Plumbing.html"> Plumbing</a></h5>
+                <!-- <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem magni eius
+                        nesciunt deleniti incidunt nemo tempora sapiente. Velit, nisi unde nemo harum suscipit
+                        quasi?</a></p> -->
+            </div>
+
+        </div>
+        <div class="card-box" style="display: flex;flex-direction: column;">
+            <div class="card-img">
+                <img src="https://us.123rf.com/450wm/mar1ar1/mar1ar11810/mar1ar1181000342/110900316-household-appliances-group-of-vacuum-cleaners-refrigerator-microwave-washing-machine-washing-machine.jpg?ver=6"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h5><a href="Homeapp.html">Home appliances</a></h5>
+                <!-- <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem magni eius
+                        nesciunt deleniti incidunt nemo tempora sapiente. Velit, nisi unde nemo harum suscipit
+                        quasi?</a></p> -->
+            </div>
+
+        </div>
+        <div class="card-box" style="display: flex;flex-direction: column;">
+            <div class="card-img">
+                <img src="https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h5><a href="Electricals.html"> Electicals</a></h5>
+                <!-- <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem magni eius
+                        nesciunt deleniti incidunt nemo tempora sapiente. Velit, nisi unde nemo harum suscipit
+                        quasi?</a></p> -->
+            </div>
+
+        </div>
+
+        <div class="card-box" style="display: flex;flex-direction: column;">
+            <div class="card-img">
+                <img src="https://media.istockphoto.com/photos/window-cleaning-picture-id162353089?k=6&m=162353089&s=612x612&w=0&h=OcI9R5ilQk_UmgM_kPHg4dCftVIzRsmTIbxJefGPSfM="
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h5><a href="Windowclean.html">Windows cleaning</a></h5>
+                <!-- <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem magni eius
+                        nesciunt deleniti incidunt nemo tempora sapiente. Velit, nisi unde nemo harum suscipit
+                        quasi?</a></p> -->
+            </div>
+
+        </div>
+        <div class="card-box" style="display: flex;flex-direction: column;">
+            <div class="card-img">
+                <img src="https://styla-prod-us.imgix.net/271d9cdd-ab6b-4a7f-9dc2-32c5de213167/1599160924906_34357f1c-a4b8-4a7e-80d8-86abfb9ad4b2?auto=format%2Ccompress&w=1280&h=699&fit=crop&crop=faces%2Cedges"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h5><a href="Airconditioning.html"> Air conditioning</a></h5>
+                <!-- <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem magni eius
+                        nesciunt deleniti incidunt nemo tempora sapiente. Velit, nisi unde nemo harum suscipit
+                        quasi?</a></p> -->
+            </div>
+
+        </div>
+        <div class="card-box" style="display: flex;flex-direction: column;">
+            <div class="card-img">
+                <img src="https://media.istockphoto.com/photos/worker-carpenter-doing-laminate-floor-work-picture-id1133685683?k=6&m=1133685683&s=612x612&w=0&h=e-iGmcTA0sf376Hv4gr11t_s-2XEchYhcwbIe_1YLuU="
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h5><a href="Flooring.html">Flooring</a></h5>
+                <!-- <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem magni eius
+                        nesciunt deleniti incidunt nemo tempora sapiente. Velit, nisi unde nemo harum suscipit
+                        quasi?</a></p> -->
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

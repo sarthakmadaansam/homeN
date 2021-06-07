@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+  h1{
+    text-align: center;
+  }
+
+  .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h1 style="align-text: center;">Reviews from our customers</h1>
+
+<div class="container">
+  <img src="img1.jpg" alt="Avatar" style="width:90px">
+  <p>Vishal kodhathe.</p>
+  <p>I loved everything about buying from you! My purchase was carefully packaged and quickly shipped. I was also pleased with great service and delivery times. There is no such awesome store on the web that can match you :)</p>
+  
+</div>
+
+<div class="container">
+  <img src="img2.png" alt="Avatar" style="width:90px">
+  <p>Sachin Chitragar.</p>
+  <p>Great Job, 100 percent satisfaction guarantee!!!</p>
+</div>
+
+<div class="container">
+  <img src="img3.jpg" alt="Avatar" style="width:90px">
+  <p>Naveen Patil.</p>
+  <p>Hi, my order arrived yesterday. I love it! Thank you! What a fast service...you guys are great! I wish every site was like this one.</p>
+</div>
+
+<div class="container">
+  <img src="img4.jpg" alt="Avatar" style="width:90px">
+  <p>Sadhana Gowda.</p>
+  <p>I wanted to say thank you for the amazing product and for the fast processing and delivery. It was impressive, you weren't kidding. I was surprised with such an excellent quality...My family is very happy. I would definitely use this site again and again and recommend it to others..</p>
+</div>
+
+<div class="container">
+  <img src="img5.jpeg" alt="Avatar" style="width:90px">
+  <p>Sinchana Chitragar.</p>
+  <p>I'm very happy. Good choice for everyone!.</p>
+</div>
+
+<div class="container">
+  <img src="img6.jpg" alt="Avatar" style="width:90px">
+  <p>Suman Pawar.</p>
+  <p>I love your store! There is the largest selection of products of the exceptional quality and the lowest prices like in no other store. My family appreciated my purchase, I have no words to describe how pleased I am...Thanks a lot to your store, to your team and the delivery in time!!! Go on your great business, stay the best!!!</p>
+</div>
+
+<h1> Want to write review for us???</h1>
+<div class="cont">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="lname" name="phone number" placeholder="Your phone number..">
+
+    <label for="phone">Email</label>
+    <input type="text" id="lname" name="email" placeholder="Your email id..">
+
+    <label for="subject">Write your review</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  </form>
+
+  <form action="sample1.html">
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
