@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+*{
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body .sale .heading{
+    display: grid;
+    width: 100%;
+    align-items: center;
+    letter-spacing: 2px;
+    text-align: center;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    grid-gap: 20px;
+    font-family: 'Prompt', sans-serif;
+    margin-top: 0%;
+    padding: 3%;
+    font-size:44px;
+}
+
+body .sale .heading:before, body .sale .heading:after{
+    content: '';
+    border-top: 2px solid;
+}
+
+body .sale .container{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 10%;
+    margin-left: 3%;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+body .sale .container .hower-one, body .sale .container .hower-two, body .sale .container .hower-three,  .hower-four,  .hower-five,  .hower-six,  .hower-seven,  .hower-eight{
+    height: 39%;
+    width: 90%;
+    margin-top:5%;
+    border-radius:15px;
+    position: relative;
+    margin-bottom: 15%;
+    transition: 1s ease;
+    margin-top: 10%;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+body .sale .container .hower-one:hover{
+    content: url('./images/Flooring/carpethover.jpg');
+    opacity: .8;
+}
+
+body .sale .container .hower-two:hover{
+    content: url('./images/Flooring/concretehover.jpg');
+    opacity: .8;
+}
+
+body .sale .container .hower-three:hover{
+    content: url('./images/Flooring/granite.jpg');
+    opacity: .8;
+}
+
+body .sale .container .hower-four:hover{
+    content: url('./images/Flooring/marblehover.jpg');
+    opacity: .8;
+}
+
+body .sale .container .hower-five:hover{
+    content: url('./images/Flooring/tilehover.jpg');
+    opacity: .8;
+}
+
+body .sale .container .hower-six:hover{
+    content: url('./images/Flooring/puhover.jpg');
+    opacity: .8;
+}
+
+body .sale .container .hower-seven:hover{
+    content: url('./images/Flooring/mastichover.jpg');
+    opacity: .8;
+}
+
+body .sale .container .hower-eight:hover{
+    content: url('./images/Flooring/groundhover.jpg');
+    opacity: .8;
+}
+
+body .sale .container .links{
+    position: absolute;
+    top: 52%;
+    text-align: center;
+    width:22%;
+}
+
+body .sale .container .links a{
+    text-decoration: none;
+    padding:4%;
+    padding-left: 8%;
+    padding-right:8%;
+    margin: 3%;
+    background-color:#0077b6;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+}
+
+body .sale .container .links a:hover{
+    background-color: #18447e;
+    color: white;
+}
+
+body .sale .container .links-2{
+    position: absolute;
+    top: 115%;
+    text-align: center;
+    width:22%;
+}
+
+body .sale .container .links-2 a{
+    text-decoration: none;
+    padding:4%;
+    padding-left: 8%;
+    padding-right:8%;
+    margin: 3%;
+    background-color:#0077b6;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+}
+
+
+body .sale .container .links-2 a:hover{
+    background-color: #18447e;
+    color: white;
+}
+
+body .sale .container .details{
+    position: absolute;
+    top: 65%;
+    width:max-content;
+    padding:1%;
+    padding-left: 6%;
+    padding-right:7.6%;
+    background-color:white;
+    text-align:center;
+    border-radius: -15px;
+}
+
+body .sale .container .details-2{
+    position: absolute;
+    top: 125%;
+    width:max-content;
+    padding:1%;
+    padding-left: 6%;
+    padding-right:8.3%;
+    background-color:white;
+    text-align:center;
+    border-radius: -15px;
+}
+
+
+body .sale .container .details .price{
+    color: #0077b6;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+body .sale .container .details .marked{
+    text-decoration: line-through;
+}
+
+body .sale .container .details-2 .price{
+    color: #0077b6;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+body .sale .container .details-2 .marked{
+    text-decoration: line-through;
+}
